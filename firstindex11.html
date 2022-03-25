@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All input element</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       .title { 
+           font-size:40px;
+           padding-top:20px;
+           padding-left: 500px;
+       }
+       .formlist {
+           padding-top:10px;
+           padding-left: 500px;
+       }
+       .search{
+        padding-left: 500px;
+        
+       }
+      
+       input{
+        width: 40%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+       }
+       input[type="radio"]
+       {
+          width: 10%;
+          padding: 5px;
+          border: 1px solid #ccc;
+          font-size:20px;
+         margin-top: 6px;
+          margin-bottom: 16px;
+          
+       }
+       input[type="checkbox"]
+       {
+          width: 10%;
+          padding: 5px;
+          border: 1px solid #ccc;
+          font-size:20px;
+         margin-top: 6px;
+          margin-bottom: 16px;
+          
+       }
+       input[type="color"]
+       {
+           width: 10%;
+          padding: 0px;
+          border: 1px solid #ccc;
+          font-size:20px;
+         margin-top: 6px;
+          margin-bottom: 16px;
+       }
+       input[type="time"]
+       {
+           width: 20%;
+         
+       }
+       input[type="image"]
+       {
+           width: 20%;
+         
+       }input[type="submit"]
+       {
+           width: 15%;
+           background-color:green;
+         
+       }
+       input[type="reset"]
+       {
+           width: 15%;
+         background-color:red;
+       }
+    </style>
+
+</head>
+<body>
+    <div class="title">Fill the Form</div>
+  
+  <div class="formlist">
+    <form style="font-size:15px" >
+       <div class="search"><label for="gsearch">Search:</label> <input type="search" id="gsearch" name="gsearch"><br></div> 
+        <label for="name">Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <label for="birthday">Birthday:</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel"id="phone" name="phone" placeholder="enter your phone no"><br>
+        <label for="gender">Gender:</label><input type="radio" name="gender" value="male"> Male<input type="radio" name="gender" value="female"> Female<br>
+        <label for="languages">Language:</label>
+        <input type="checkbox" id="lang1" name="lang1" value="english">
+        <label for="lang1">English</label>
+        <input type="checkbox" id="lang2" name="lang2" value="tamil">
+        <label for="lang2">Tamil</label><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+        <label for="myfile">upload resume:</label><br>
+        <input type="file" id="resume" name="resume" value="resume"><br>
+        <label for="website">Add your website:</label><br>
+        <input type="url" id="website" name="website" placeholder="Add your website"><br>
+        <label for="appt">Available time:</label><br>
+       from: <input type="time" id="appt" name="appt"> to : <input type="time" id="appt" name="appt"><br>
+       <label for="date">Today date : </label> <input type="date" id="date" name="date"><br>
+       
+       <label for="photo">Upload Photo :</label>
+       <input type="image" id="photo" name="photo"><br>
+
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+      </form>
+  </div>                                       
+    
+</body>
+</html>
